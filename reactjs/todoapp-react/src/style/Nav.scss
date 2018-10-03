@@ -1,0 +1,76 @@
+.navbar { 
+  background-image: url('../assets/header-mid-bg.png');
+  background-repeat: no-repeat;
+  height: 300px;
+  padding-bottom: 180px;
+
+  .navbar-brand {
+    color: rgba(0,0,0,.9);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    width: 175px;
+    height: 80px;
+    margin-left: -14px;
+    margin-top: -150px;
+    
+    .navbar-brand-link{
+      margin-left: 95px;
+  
+      .logo{
+        height: 70px;
+        width: 70px;
+      }
+    }
+  }
+
+  .navbar-collapse{
+    margin-right: -14px;
+    margin-top: -150px;
+    .navbar-right{
+      font-size: 20px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-bottom-left-radius: 40px;
+      border-top-left-radius: 40px;
+      width: 700px;
+      height: 42px;
+      padding-left: 26px;
+      .nav-item{
+        padding-left: 20px;
+        padding-right: 20px;
+        .nav-link {
+          color: #512467;
+          font-family: 'Roboto', sans-serif;
+          font-size: 17px;
+          font-weight: 300;
+          padding: 10px;
+        }
+      }
+      .active {
+        background: #512467;
+        
+        .nav-link {
+          color: #fff;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-collapse{
+      width: 100%;
+      position: fixed !important;
+      border-radius: 0 !important;
+      background:  rgba(81, 36, 103, 0.75);
+      top: 200px;
+      z-index: 1000;
+    }
+    .nav-item{
+      padding-left: 20px;
+      padding-right: 20px;
+      .nav-link {
+        color: white;
+      }
+    }
+  }
+}
